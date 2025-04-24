@@ -18,7 +18,7 @@ while(opcao != 4):
             peso = float(input("Digite o peso (kg): "))
             altura = float(input("Digite a altura (m): "))
             imc = peso / (altura ** 2)
-            
+
             if imc < 18.5:
                 classificacao = "Abaixo do peso"
             elif 18.5 <= imc < 25:
@@ -47,8 +47,8 @@ while(opcao != 4):
             else:
                 print("\nLista de Cadastros:")
                 for i, cadastro in enumerate(lista):
-                    print(f"{i+1}. Nome: {cadastro[0]}, Peso: {cadastro[1]}kg, Altura: {cadastro[2]}m")
-                    print(f"   IMC: {cadastro[3]} - Classificação: {cadastro[4]}\n")
+                    print(f"{i+1}. Nome: {cadastro[0]}, idade: {cadastro[1]} Peso: {cadastro[2]}kg, Altura: {cadastro[3]}m")
+                    print(f"   IMC: {cadastro[4]} - Classificação: {cadastro[5]}\n")
         else:
             print("\nSenha incorreta! Acesso negado.")
 
